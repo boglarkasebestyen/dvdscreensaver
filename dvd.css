@@ -1,0 +1,28 @@
+
+#html, head, body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#animationBox {
+  display: block;
+  position: absolute;
+  /*border: 1px solid white;*/
+  transition: background-color 0.10s ease;
+  -webkit-transition: background-color 0.10s ease;
+  -moz-transition: background-color 0.10s ease;
+  -o-transition: background-color 0.10s ease;
+  left: 5px;
+  top: 5px;
+  /*padding: 5px;*/
+  height: 20vh;
+  width: 20vw;
+}
