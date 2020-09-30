@@ -62,9 +62,6 @@ function detectCorner(newX, newY, maxX, maxY, w, h) {
   var newXwidth = newX + w;
   var newYheight = newY + h;
 
-  // console.log("newX:" + newX + " newY:" + newY + " w:" + w + " h:" + h);
-  // console.log("x: " + newXwidth + " y:" + newYheight + " maxX:" + maxX + " maxY:" + maxY);
-
   var topLeft = almostEqual(newX,0) && almostEqual(newY, 0);
   var topRight = almostEqual(newXwidth, maxX) && almostEqual(newY, 0);
   var bottomRight = almostEqual(newXwidth, maxX) && almostEqual(newYheight, maxY);
@@ -107,7 +104,6 @@ function movingBox() {
       if (oldX <= 0 || oldX >= maxX) { 
         directionX = directionX * -1;
         changeCubeColor(animationBox, soundX, cornerDetection);
-        // $("#animationBox").effect("bounce", { direction: "left",times: 2}, 2);
       } 
 
       newX = newX + 2 * directionX;
@@ -115,7 +111,6 @@ function movingBox() {
       if (oldY <= 0 || oldY >= maxY) {
         directionY = directionY * -1;
         changeCubeColor(animationBox, soundY, cornerDetection);
-        // $("#animationBox").effect("bounce", { direction: "left",times: 4}, 2);
       } 
 
       newY = newY + 2 * directionY;
@@ -132,8 +127,6 @@ function movingBox() {
           cornerDetection = true;
           framesSinceCorner = 0;
       }
-        // console.log("newX:" + newX + " " + "newY:" + newY);
-
     }
 
     var mouseDown = false;
