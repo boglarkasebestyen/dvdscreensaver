@@ -1,6 +1,6 @@
 
 
-# JavaScript version of the popular bouncing DVD screensaver 
+## JavaScript version of the popular bouncing DVD screensaver 
 
 Inspired by the episode "Launch Party" from the American mockumentary sitcom TV series, *The Office*, I decided to recreate the bouncing DVD screensaver as my first JS project.
 
